@@ -63,4 +63,19 @@ const salaryChecker = randomSalary >= 10000 ? console.log("You are rich") : (ran
         console.log('Zweite Zahl größer');
     }
 
+    const zahl1 = Math.floor(Math.random() * 77);
+    const zahl2 = Math.floor(Math.random() * 77);
+    console.log(`Zahl 1: ${zahl1}, Zahl 2: ${zahl2}`);
+
+    switch (true) {
+        case zahl1 === zahl2:
+            console.log('Was für ein Zufall');
+        break;
+        case zahl1 > zahl2:
+            console.log('Erste Zahl größer');
+        break;
+        case zahl1 < zahl2:
+            console.log('Zweite Zahl größer');
+        break;
+}
 
